@@ -3,9 +3,7 @@ package ru.job4j.converter;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
-
 class ConverterTest {
-
     @Test
     void whenConvert140RblThen2Euro() {
         float in = 140;
