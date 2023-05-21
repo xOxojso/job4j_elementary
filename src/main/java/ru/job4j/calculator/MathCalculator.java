@@ -13,14 +13,16 @@ public class MathCalculator {
                 + subtraction(first, second);
     }
 
-    public static double subAndMulti(double first, double second) {
+    public static double subMultiDivAndSum(double first, double second) {
         return subtraction(first, second)
-                + multiply(first, second);
+                + multiply(first, second)
+                + sum(first, second)
+                + division(first, second);
     }
 
     public static void main(String[] args) {
         System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
         System.out.println("Результат расчета равен: " + divAndSub(20, 2));
-        System.out.println("Результат расчета равен: " + subAndMulti(44, 21));
+        System.out.println("Результат расчета равен: " + subMultiDivAndSum(44, 21));
     }
 }
